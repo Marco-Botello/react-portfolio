@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import {BsFillMoonStarsFill, BsTextCenter} from 'react-icons/bs';
-import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from "react-icons/ai";
+import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube, AiFillGithub} from "react-icons/ai";
 import Image from 'next/image';
 import deved from '../public/dev-ed-wave.png';
 import design from '../public/design.png';
@@ -12,7 +12,9 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+
+
 
 export default function Home() {
   const[darkMode,setDarkMode] = useState(false);
@@ -33,7 +35,7 @@ export default function Home() {
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/>
                 </li>
               <li>
-                <a className='bg-gradient-to-r from-cyan-500 to-teal-700 bg-cyan-500 text-white px-4 py-2 rounded-md ml-8' href='google.com'>Resume</a>
+                <a className='bg-gradient-to-r from-cyan-500 to-teal-700 bg-cyan-500 text-white px-4 py-2 rounded-md ml-8' href='https://drive.google.com/file/d/1327ahUxoG2T9ZzTKBbtMlfUBjre3KooY/view?usp=share_link'>Resume</a>
                 </li>
             </ul>
           </nav>
@@ -44,8 +46,8 @@ export default function Home() {
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-500'>
             <AiFillTwitterCircle/>
-            <AiFillLinkedin/>
-            <AiFillYoutube/>
+            <a  href='https://www.linkedin.com/in/marco-botello-56286b211/'><AiFillLinkedin/></a>
+            <a href='https://github.com/Marco-Botello'><AiFillGithub/></a>
           </div>
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 to-white rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
             <Image src={deved} layout="fill" objectFit="cover"/>
