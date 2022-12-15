@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import {BsFillMoonStarsFill, BsTextCenter} from 'react-icons/bs';
-import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube, AiFillGithub, AiFillPhone, AiFillContacts} from "react-icons/ai";
+import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube, AiFillGithub} from "react-icons/ai";
 import Image from 'next/image';
 import deved from '../public/dev-ed-wave.png';
 import design from '../public/design.png';
@@ -13,7 +13,7 @@ import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import { useState, useRef } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+
 
 
 
@@ -41,7 +41,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400'>Marco Botello</h2>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400'>Tony Botello</h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-teal-500'>Developer and designer.</h3>
             <p className='text-md py-5 leading-8 text-gray-800 max-w-xl mx-auto md:text-xl  dark:text-white'>Computer Science Graduate Seeking a Full-Time Position Computer Science Graduate Seeking a Full-Time Position Computer Science Graduate Seeking a Full-Time Position</p>
           </div>
@@ -108,45 +108,11 @@ export default function Home() {
             <div className='basis-1/3 flex-1'><a href='https://github.com/g3aguirr/kanject'><Image src={web6} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/></a></div>
           </div>
         </section>
-        <section>
-          <footer class="p-4 rounded-xl bg-white sm:p-6 dark:bg-gray-900">
-            <div class="md:flex md:justify-between">
-                <div class="mb-6 md:mb-0">
-                    <a class="flex items-center">
-                        <AiFillPhone className='mr-3 h-8 w-8 dark:text-cyan-400'></AiFillPhone>
-                        <span class="self-center text-2xl font-semibold  dark:text-cyan-400">Contact Info</span>
-                    </a>
-                </div>
-                <div class="grid grid-cols-2 gap-8 sm:gap-2 sm:grid-cols-3 md:gap-20 lg:gap-40">
-                    <div>
-                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Phone</h2>
-                        <ul class="text-gray-600 dark:text-gray-400">
-                            <li class="mb-4">
-                                <h1>(657)243-4078</h1>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">E-Mails</h2>
-                        <ul class="text-gray-600 dark:text-gray-400">
-                            <li class="mb-4">
-                                <h1>marco.botello@csu.fullerton.edu</h1>
-                            </li>
-                            <li>
-                                <h1>marcobotellocs@gmail.com</h1>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-          </footer>
-        </section>
 
       </main>
 
     </div>
 
   )
- 
 }
 
