@@ -4,5 +4,6 @@ A website built using React and Tailwind.
 - [x] Links added
 - [ ] Replace placeholder text
 - [ ] Replace placeholder images
-- [ ] Contact me embedded
+- [x] Contact me section
+- [ ] Contact me section formatted for phone
 
